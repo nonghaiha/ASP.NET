@@ -25,9 +25,6 @@
                             Phương tiện: <asp:Literal ID="Literal4" runat="server" Text='<%# Eval("vename") %>'></asp:Literal><br />
                             Khách sạn: <asp:Literal ID="Literal1" runat="server" Text='<%# Eval("honame") %>'></asp:Literal><br />
                             <br />
-                            <p class="btnBooktour">
-                                <a href="detailoder.aspx">Book Tour</a>
-                            </p>
                         </td>
                     </tr>
                 </table>

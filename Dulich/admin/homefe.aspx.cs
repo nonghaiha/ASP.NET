@@ -11,7 +11,7 @@ namespace Dulich.admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            lblnguoitruycap.Text = "Số lượt truy cập website: " + Application["SLTruyCap1"].ToString(); 
         }
     }
 }

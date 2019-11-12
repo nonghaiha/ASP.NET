@@ -10,7 +10,7 @@
                 ID:
             </td>
             <td>
-                <asp:TextBox ID="txtcatid" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtcatid" runat="server" ></asp:TextBox>
             </td>
         </tr>
         <tr>

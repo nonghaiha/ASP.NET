@@ -16,8 +16,8 @@ namespace Dulich.page
 
         protected void btnTimkiem_Click(object sender, EventArgs e)
         {
-            string sname = txttimkiem.Text;
-            Response.Redirect("searchtour.aspx?name=" +sname);
+                string sname = txttimkiem.Text;
+                Response.Redirect("searchtour.aspx?name=" + sname);
         }
     }
 }

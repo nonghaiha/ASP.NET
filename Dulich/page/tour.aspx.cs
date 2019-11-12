@@ -30,10 +30,7 @@ namespace Dulich.page
             
         }
 
-        protected void btnBookTour_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("DetailOrder.aspx");
-        }
+        
         
     }
 }

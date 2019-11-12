@@ -19,7 +19,7 @@
 			</div>
 			<div class="textbox">
 				<i class="fa fa-lock" aria-hidden="true"></i>
-                <asp:TextBox ID="txtpassword" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtpassword" runat="server" TextMode="Password"></asp:TextBox>
 			</div>
         <asp:Button ID="btnLogin" runat="server" Text="Sign in" onclick="btnLogin_Click" />
 		</div>

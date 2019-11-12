@@ -6,32 +6,31 @@
 <head runat="server">
     <title>Website Travel</title>
     <link href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="../public/css/style43.css" rel="stylesheet" type="text/css" />
+    <link href="../public/css/style58.css" rel="stylesheet" type="text/css" />
     <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="../Scripts/jquery.js" type="text/javascript"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
 <body>
+  <form id="Form2"  method="post" runat="server" >
         <div class="header">
 		    <div class="header-area">
 			<div class="header-logo">
-				<a href="#">
+				<a href="home.aspx">
 					<img src="../public/Image/Logo/NewLogo.png" alt="Header logo"></a>
 					<p>
 					Travel</p>
 				</div>
 				<div class=" header-right">
 					<div class="header-search">
-                        <form id="Form2"  method="post" runat="server" >
                         <asp:TextBox ID="txttimkiem" runat="server"></asp:TextBox>
                         <asp:Button ID="btnTimkiem" runat="server" Text="Tìm kiếm" Width="100px" 
-                            onclick="btnTimkiem_Click" />
-                        </form>
+                            onclick="btnTimkiem_Click" />                  
 					</div>
 					<div class="header-login">
-						<fieldset>
-							<a href="login.aspx">Đăng nhập</a> | <a href="#">Đăng ký</a>
-						</fieldset>
+                        <fieldset>
+    		                <a href="../admin/login.aspx">Đăng nhập</a> | <a href="#">Đăng ký</a>
+	                    </fieldset>
 					</div>
 				</div>
 			</div>
@@ -54,13 +53,13 @@
 								</li>
                                 <li><a href="tour.aspx">Tour Nước Ngoài</a>
 									<ul class="sub-menu1">
-										<li><a href="#">Mỹ</a></li>
-										<li><a href="#">Canada</a></li>
-										<li><a href="#">Australia</a></li>
-										<li><a href="#">Hàn Quốc</a></li>
-										<li><a href="#">Thái Lan</a></li>
-										<li><a href="#">Nhật Bản</a></li>
-										<li><a href="#">Trung Quốc</a></li>
+										<li><a href="tourplace.aspx?place_id=22">Mỹ</a></li>
+										<li><a href="tourplace.aspx?place_id=23">Canada</a></li>
+										<li><a href="tourplace.aspx?place_id=24">Australia</a></li>
+										<li><a href="tourplace.aspx?place_id=25">Hàn Quốc</a></li>
+										<li><a href="tourplace.aspx?place_id=26">Thái Lan</a></li>
+										<li><a href="tourplace.aspx?place_id=27">Nhật Bản</a></li>
+										<li><a href="tourplace.aspx?place_id=28">Trung Quốc</a></li>
 									</ul>
 								</li>
 								<li><a href="lienhe.aspx">Liên hệ</a></li>
@@ -75,7 +74,7 @@
             </asp:ContentPlaceHolder>
         </div>
     	<div class="main">
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <div class="menudoc">
 				            <h3>ĐIỂM ĐẾN HOT</h3>
 				            <ul>
@@ -85,7 +84,9 @@
 					            <li><a href="tourplace.aspx?place_id=15">Nha Trang</a></li>
 					            <li><a href="tourplace.aspx?place_id=16">Phú Quốc</a></li>
 					            <li><a href="tourplace.aspx?place_id=2">Hà Giang</a></li>
-					            <li><a href="tourplace.aspx?place_id=17">Tour nước ngoài</a></li>
+					            <li><a href="tourplace.aspx?place_id=27">Japan</a></li>
+					            <li><a href="tourplace.aspx?place_id=22">American</a></li>
+					            <li><a href="tourplace.aspx?place_id=25">Korean</a></li>
 				            </ul>
 			            </div>
                     </div>
@@ -150,9 +151,10 @@
 			</div>
 			<div class="footer-bottom-area border-bot-4">
 				<div class="Coppy-right">
-					<p>Coppyright TienTho. All Right Reserved</p>
+					<p>Coppyright HaiHa. All Right Reserved</p>
 				</div>
 			</div>
 		</div>
+        </form>
 </body>
 </html>

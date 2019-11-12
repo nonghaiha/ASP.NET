@@ -25,7 +25,7 @@
                         <b>Chi tiết tour:</b> <asp:Literal ID="Literal1" runat="server" Text='<%# Eval("detail") %>'></asp:Literal><br />
                             <br />
                             <p class="btnBooktour">
-                                <a href="detailoder.aspx">Book Tour</a>
+                                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl='<%#"booktour.aspx?Id=" +Eval("id").ToString() %>'>Booktour</asp:HyperLink>
                             </p>
                     </td>
                 </tr>

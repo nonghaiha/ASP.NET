@@ -3,7 +3,42 @@
 	padding:0;
 	margin:0;
 }
-
+.contact-us img
+{
+    width:100%;
+    position:relative;
+    }
+.contact-us
+{
+    width:1000px;
+    margin:0 auto;
+    text-align:center;
+    }    
+.contact-us span
+{
+    position: absolute;
+    font-size: 20px;
+    /* background: red; */
+    margin-top: -80px;
+    background-color: #CCCCFF;
+    font-style: italic;
+    }    
+.table-1 td
+{
+     padding:10px 5px;
+    }
+.table-1
+{
+    margin:0 auto;
+    text-align:center;
+    }
+.Login-Custormer
+{
+    padding:5px 10px;
+    margin-top:-30px;
+    margin-right:-100px;
+    }
+.Login-Custormer
 .show-product .thumbnail{
 	height: 500px;
 	box-sizing: border-box;
@@ -51,7 +86,7 @@
     margin-bottom: 50px;
     text-align: center!important;
     text-transform: uppercase;
-    margin-left:300px;
+    margin-left:280px;
     }
 .title-1:before, .title-1:after
 {
@@ -207,7 +242,7 @@
 	background: #eceff8;
     border: 2px solid #eceff8;
     padding: 5px 10px;
-    margin-left: 300px;
+    margin-left: 540px;
     margin-top: -60px;
 }
 .header-search input:hover{
@@ -215,7 +250,7 @@
 }
 .header-login{
 	float: right;
-	margin-right: 200px;
+	margin-right: 150px;
 	margin-top:-60px;
 }
 .header-login fieldset{
@@ -356,6 +391,11 @@
 .content {
 	margin-bottom: 20px;
 }
+.content img
+{
+    margin-left:150px;
+    }
+.content h2{ text-align:center;font-weight:bold}    
 .content p{
 	font-size: 24px;
 	color: black;

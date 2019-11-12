@@ -40,9 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DetailbooktourBUS.cs" />
     <Compile Include="Event-NewsBUS.cs" />
     <Compile Include="HotelBUS.cs" />
     <Compile Include="LoginBUS.cs" />
+    <Compile Include="LoginCusBUS.cs" />
+    <Compile Include="OrderBUS.cs" />
+    <Compile Include="OrderTourAdminBUS.cs" />
     <Compile Include="PlaceBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PublicHomeTour.cs" />

@@ -3,4 +3,10 @@
     <h3 class="title-1">
         Liên hệ với chúng tôi
     </h3>
+    <div class="clearfix">
+    </div>
+    <div class="contact-us">
+        <img src="../imagecontent/tải xuống.jpg" alt="Alternate Text" />
+        <span>Phone: 0368521362&nbsp; Email:info.travel@gmail.com</span>
+    </div>
 </asp:Content>

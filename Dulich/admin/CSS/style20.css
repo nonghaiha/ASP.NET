@@ -45,7 +45,7 @@
     text-decoration:none;
     text-align: left;
     padding: 0 1px;
-    color: black;
+    color: yellow;
     }    
 .backend-nav ul li a:hover{
     color: red;
@@ -60,7 +60,7 @@
 {
     clear:both;
     width:100%;
-    background-color: #ecf0f5;
+    background-color: yellow;
     padding: 15px;
     margin-top:10px;
 }

@@ -61,6 +61,7 @@
     <Content Include="admin\eventnew.aspx" />
     <Content Include="admin\homefe.aspx" />
     <Content Include="admin\image\ảnh đại diện.jpg" />
+    <Content Include="admin\ordertour.aspx" />
     <Content Include="admin\tour.aspx" />
     <Content Include="admin\ViewEventNew.aspx" />
     <Content Include="admin\viewtour.aspx" />
@@ -75,17 +76,24 @@
     <Content Include="bootstrap-3.3.7-dist\js\bootstrap.js" />
     <Content Include="bootstrap-3.3.7-dist\js\bootstrap.min.js" />
     <Content Include="bootstrap-3.3.7-dist\js\npm.js" />
+    <Content Include="imagecontent\1536775797.jpg" />
+    <Content Include="imagecontent\cam-nang-du-lich-2-mytour-7.jpg" />
+    <Content Include="imagecontent\cam-nang-du-lich-mytour-15.jpg" />
+    <Content Include="imagecontent\tải xuống.jpg" />
+    <Content Include="page\booktour.aspx" />
+    <Content Include="page\detailbooktour.aspx" />
     <Content Include="page\detailtour.aspx" />
     <Content Include="page\gioithieu.aspx" />
     <Content Include="page\home.aspx" />
     <Content Include="page\hotel.aspx" />
     <Content Include="page\lienhe.aspx" />
-    <Content Include="page\login.aspx" />
+    <Content Include="admin\login.aspx" />
     <Content Include="page\searchtour.aspx" />
+    <Content Include="page\SLTC.txt" />
     <Content Include="page\tour.aspx" />
     <Content Include="page\tourplace.aspx" />
     <Content Include="public\css\Login3.css" />
-    <Content Include="public\css\style43.css" />
+    <Content Include="public\css\style58.css" />
     <Content Include="public\Image\banner\8-kieu-chup-anh-kinh-dien-cua-cap-doi-khi-cung-nhau-di-du-lich_1.jpg" />
     <Content Include="public\Image\banner\book-banner-1.jpg" />
     <Content Include="public\Image\banner\book-banner-2.gif" />
@@ -117,6 +125,7 @@
     <Content Include="public\Image\Uploads\tư duy nhanh và chậm.jpg" />
     <Content Include="public\Image\Uploads\về nhà mà ăn cơm.jpg" />
     <Content Include="Scripts\jquery.js" />
+    <Content Include="SLTC.txt" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
@@ -693,6 +702,13 @@
     <Compile Include="admin\homefe.aspx.designer.cs">
       <DependentUpon>homefe.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\ordertour.aspx.cs">
+      <DependentUpon>ordertour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ordertour.aspx.designer.cs">
+      <DependentUpon>ordertour.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\tour.aspx.cs">
       <DependentUpon>tour.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -723,6 +739,20 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="page\booktour.aspx.cs">
+      <DependentUpon>booktour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\booktour.aspx.designer.cs">
+      <DependentUpon>booktour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\detailbooktour.aspx.cs">
+      <DependentUpon>detailbooktour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\detailbooktour.aspx.designer.cs">
+      <DependentUpon>detailbooktour.aspx</DependentUpon>
     </Compile>
     <Compile Include="page\detailtour.aspx.cs">
       <DependentUpon>detailtour.aspx</DependentUpon>
@@ -766,11 +796,11 @@
     <Compile Include="page\lienhe.aspx.designer.cs">
       <DependentUpon>lienhe.aspx</DependentUpon>
     </Compile>
-    <Compile Include="page\login.aspx.cs">
+    <Compile Include="admin\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="page\login.aspx.designer.cs">
+    <Compile Include="admin\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="page\searchtour.aspx.cs">

@@ -16,7 +16,7 @@ namespace Dulich.page
         {
 
         }
-     
+        
         protected void btnLogin_Click(object sender, EventArgs e)
         {
             if (txtusername.Text == null && txtpassword.Text == null)
@@ -28,7 +28,7 @@ namespace Dulich.page
                 if (logacc.CheckLogBUS(txtusername.Text, txtpassword.Text))
                 {
                     Response.Write("<script>alert('Login success')</script>");
-                    Response.Redirect("~/admin/homefe.aspx");
+                    Response.Redirect("homefe.aspx");
                 }
                 else {
                     Response.Write("<script>alert('Login Fail')</script>");
