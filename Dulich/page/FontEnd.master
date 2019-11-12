@@ -1,0 +1,139 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FontEnd.master.cs" Inherits="dulich1.page.FontEnd" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Travel around the world</title>
+    <link href="../public/css/style7.css" rel="stylesheet" type="text/css" />
+    <link href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+    <body>
+            <div class="header">
+		    <div class="header-area">
+			<div class="header-logo">
+				<a href="#">
+					<img src="../public/Image/Logo/NewLogo.png" alt="Header logo"></a>
+					<p>
+					Travel</p>
+				</div>
+				<div class=" header-right">
+					<div class="header-search">
+                        <form id="Form2"  method="post" runat="server" >
+                        <asp:TextBox ID="txttimkiem" runat="server"></asp:TextBox>
+                        <asp:Button ID="btnTimkiem" runat="server" Text="Tìm kiếm" Width="100px" />
+                        </form>
+					</div>
+					<div class="header-login">
+						<fieldset>
+							<a href="login.aspx">Đăng nhập</a> | <a href="#">Đăng ký</a>
+						</fieldset>
+					</div>
+				</div>
+			</div>
+			<div class="nav-area">
+				<div class="container">
+					<div class="row">
+						<nav>
+							<ul>
+								<li><a href="#">Trang Chủ</a></li>
+								<li><a href="gioithieu.aspx">Giới thiệu</a></li>
+								<li><a href="#">Tin tức</a></li>
+								<li>
+									<a href="tour.aspx">Tour</a>
+									<ul class="sub-menu">
+										<li><a href="#">Tour trong nước</a></li>
+										<li><a href="#">Tour nước ngoài</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Liên hệ</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+    		<div class="main">
+            <div class="container">
+                <div class="row">
+                        <div class="col-md-3">
+                            <div class="menudoc">
+				            <h3>Danh sách dịch vụ</h3>
+				            <ul>
+					            <li><a href="">Hà Nội</a></li>
+					            <li><a href="">TP. Hồ Chí Minh</a></li>
+					            <li><a href="">Đà Nẵng</a></li>
+					            <li><a href="">Nha Trang</a></li>
+					            <li><a href="">Phú Quốc</a></li>
+					            <li><a href="">Hà Giang</a></li>
+					            <li><a href="">Tour nước ngoài</a></li>
+				            </ul>
+			            </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="main-container">
+                            <asp:ContentPlaceHolder ID="main_body" runat="server">
+                                
+                            </asp:ContentPlaceHolder>
+			            </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+	    	<div class="footer">
+			<div class="footer-top-area">
+				<div class="footer-area">
+					<div class="footer-logo">
+						<img src="../public/Image/Logo/NewLogo.png" alt="Footer logo">
+					</div>
+					<div class="footer-address">
+						<ul>
+							<li>Address: 09 - Nhon , Nam Tu Liem, Ha Noi, Viet Nam</li>
+							<li>Phone: 0368521362</li>
+							<li>Email: travelaroundworld@gmail.com</li>
+						</ul>
+					</div>
+					<div class="footer-time">
+						<ul>
+							<li>Open: <span>7.00 AM</span> - Close: <span>10.00 PM</span> - ALL WEEK</li>
+						</ul>
+					</div>
+					<div class="footer-icon-payment">
+						<a href="#"><img src="../public/Image/payment.png" alt="icon payment"></a>
+					</div>
+				</div>
+				<div class="footer-area">
+					<div class="footer-information">
+						<div class="footer-information-title">
+							<h4>Information</h4>
+						</div>
+						<div class="footer-information-content">
+							<ul>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Best sale tour</a></li>
+								<li><a href="#">Favorite tour</a></li>
+								<li><a href="#">Membership</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-area">
+					<div class="footer-service">
+						<div class="footer-service-title">
+							<h4>Service</h4>
+						</div>
+						<div class="footer-service-content">
+							<ul>
+								<li><a href="#">Support</a></li>
+								<li><a href="#">Account</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom-area border-bot-4">
+				<div class="Coppy-right">
+					<p>Coppyright TienTho. All Right Reserved</p>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+body{
+padding: 0;
+margin: 0;
+font-family: sans-serif;
+background:url(C:\xampp\htdocs\Proj_PHP\NhasachTienTho.com\Image\thapeiffel) no-repeat;
+background-size: cover; 
+}
+.Login-box{
+width:280px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:white;
+}
+.Login-box h1{
+float:left;
+font-size:40px;
+border-bottom:5px solid #4caf50;
+margin-bottom:50px;
+padding:13px 0;
+}
+.textbox {
+width:100%;
+overflow:hidden;
+padding:13px 0;
+margin:13px 0;
+border-bottom:5px solid #4caf50;	
+}
+.textbox i{
+width: 26px;
+float: left;
+text-align: center;
+}
+.textbox #txtusername{
+border: none;
+outline: none;
+background:white;
+color: black;
+width: 80%;
+border-radius: 10px;
+height:20px;
+}
+.textbox #txtpassword{
+border: none;
+outline: none;
+background:white;
+color: black;
+width: 80%;
+border-radius: 10px;
+height:20px;
+}
+#btnLogin{
+width: 100%;
+background:none;
+float: left;
+cursor: pointer;
+margin:10px 0;
+border: 3px solid #4caf50;
+color: white;
+font-size: 18px;
+}	

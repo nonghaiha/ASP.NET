@@ -1,0 +1,11 @@
+D:\ASP.NET\Dulich\Dulich\bin\Dulich.dll
+D:\ASP.NET\Dulich\Dulich\bin\Dulich.pdb
+D:\ASP.NET\Dulich\Dulich\obj\Debug\Dulich.dll
+D:\ASP.NET\Dulich\Dulich\obj\Debug\Dulich.pdb
+D:\ASP.NET\Dulich\Dulich\obj\Debug\Dulich.csprojResolveAssemblyReference.cache
+D:\ASP.NET\Dulich\Dulich\bin\BUS.dll
+D:\ASP.NET\Dulich\Dulich\bin\DAL.dll
+D:\ASP.NET\Dulich\Dulich\bin\DTO.dll
+D:\ASP.NET\Dulich\Dulich\bin\BUS.pdb
+D:\ASP.NET\Dulich\Dulich\bin\DAL.pdb
+D:\ASP.NET\Dulich\Dulich\bin\DTO.pdb

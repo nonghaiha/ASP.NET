@@ -1,0 +1,9 @@
+D:\ASP.NET\Dulich\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+D:\ASP.NET\Dulich\BUS\bin\Debug\BUS.dll
+D:\ASP.NET\Dulich\BUS\bin\Debug\BUS.pdb
+D:\ASP.NET\Dulich\BUS\bin\Debug\DAL.dll
+D:\ASP.NET\Dulich\BUS\bin\Debug\DTO.dll
+D:\ASP.NET\Dulich\BUS\bin\Debug\DAL.pdb
+D:\ASP.NET\Dulich\BUS\bin\Debug\DTO.pdb
+D:\ASP.NET\Dulich\BUS\obj\Debug\BUS.dll
+D:\ASP.NET\Dulich\BUS\obj\Debug\BUS.pdb

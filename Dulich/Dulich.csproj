@@ -1,0 +1,947 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{311F91A2-780D-4B7B-82D9-31980A38D716}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dulich</RootNamespace>
+    <AssemblyName>Dulich</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="admin\category.aspx" />
+    <Content Include="admin\categoryhotel.aspx" />
+    <Content Include="admin\CSS\style20.css" />
+    <Content Include="admin\eventnew.aspx" />
+    <Content Include="admin\homefe.aspx" />
+    <Content Include="admin\image\ảnh đại diện.jpg" />
+    <Content Include="admin\tour.aspx" />
+    <Content Include="admin\ViewEventNew.aspx" />
+    <Content Include="admin\viewtour.aspx" />
+    <Content Include="banner\banner-03.jpg" />
+    <Content Include="banner\banner-11.jpg" />
+    <Content Include="banner\banner-16.jpg" />
+    <Content Include="bootstrap-3.3.7-dist\css\bootstrap-theme.css" />
+    <Content Include="bootstrap-3.3.7-dist\css\bootstrap-theme.min.css" />
+    <Content Include="bootstrap-3.3.7-dist\css\bootstrap.css" />
+    <Content Include="bootstrap-3.3.7-dist\css\bootstrap.min.css" />
+    <Content Include="bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bootstrap-3.3.7-dist\js\bootstrap.js" />
+    <Content Include="bootstrap-3.3.7-dist\js\bootstrap.min.js" />
+    <Content Include="bootstrap-3.3.7-dist\js\npm.js" />
+    <Content Include="page\detailtour.aspx" />
+    <Content Include="page\gioithieu.aspx" />
+    <Content Include="page\home.aspx" />
+    <Content Include="page\hotel.aspx" />
+    <Content Include="page\lienhe.aspx" />
+    <Content Include="page\login.aspx" />
+    <Content Include="page\searchtour.aspx" />
+    <Content Include="page\tour.aspx" />
+    <Content Include="page\tourplace.aspx" />
+    <Content Include="public\css\Login3.css" />
+    <Content Include="public\css\style43.css" />
+    <Content Include="public\Image\banner\8-kieu-chup-anh-kinh-dien-cua-cap-doi-khi-cung-nhau-di-du-lich_1.jpg" />
+    <Content Include="public\Image\banner\book-banner-1.jpg" />
+    <Content Include="public\Image\banner\book-banner-2.gif" />
+    <Content Include="public\Image\banner\book-banner-3.jpg" />
+    <Content Include="public\Image\banner\book-banner-4.jpg" />
+    <Content Include="public\Image\banner\book-banner-5.jpg" />
+    <Content Include="public\Image\banner\ngam-ha-giang-dep-me-hon-qua-anh-12-01-2016-1452611700.jpg" />
+    <Content Include="public\Image\imglogin\thapeiffel.jpg" />
+    <Content Include="public\Image\Logo\Logo.png" />
+    <Content Include="public\Image\Logo\NewLogo.png" />
+    <Content Include="public\Image\payment.png" />
+    <Content Include="public\Image\Uploads\1562646894-nhà giả kim.jpg" />
+    <Content Include="public\Image\Uploads\1562682706-nhà giả kim.jpg" />
+    <Content Include="public\Image\Uploads\1562682893-bieu-tuong-that-truyen.jpg" />
+    <Content Include="public\Image\Uploads\1562683006-2 vạn dặm dưới đáy biển.jpg" />
+    <Content Include="public\Image\Uploads\1562683031-2 vạn dặm dưới đáy biển.jpg" />
+    <Content Include="public\Image\Uploads\1562683283-naruto tập 1.jpg" />
+    <Content Include="public\Image\Uploads\1563678883-nhà giả kim.jpg" />
+    <Content Include="public\Image\Uploads\1563678949-bieu-tuong-that-truyen.jpg" />
+    <Content Include="public\Image\Uploads\1563679083-dế mèn phiêu lưu kí.jpg" />
+    <Content Include="public\Image\Uploads\1563679128-1562683283-naruto tập 1.jpg" />
+    <Content Include="public\Image\Uploads\1563679255-về nhà mà ăn cơm.jpg" />
+    <Content Include="public\Image\Uploads\1563679336-tư duy nhanh và chậm.jpg" />
+    <Content Include="public\Image\Uploads\1563679501-cô gái năm ấy chúng ta cùng theo đuổi.jpg" />
+    <Content Include="public\Image\Uploads\cô gái năm ấy chúng ta cùng theo đuổi.jpg" />
+    <Content Include="public\Image\Uploads\cô-gái-đến-từ-ngày-hôm-qua.jpg" />
+    <Content Include="public\Image\Uploads\dế mèn phiêu lưu kí.jpg" />
+    <Content Include="public\Image\Uploads\time-nhà giả kim.jpg" />
+    <Content Include="public\Image\Uploads\tư duy nhanh và chậm.jpg" />
+    <Content Include="public\Image\Uploads\về nhà mà ăn cơm.jpg" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="tinymce\config.js" />
+    <Content Include="tinymce\license.txt" />
+    <Content Include="tinymce\plugins\advlist\plugin.min.js" />
+    <Content Include="tinymce\plugins\anchor\plugin.min.js" />
+    <Content Include="tinymce\plugins\autolink\plugin.min.js" />
+    <Content Include="tinymce\plugins\autoresize\plugin.min.js" />
+    <Content Include="tinymce\plugins\autosave\plugin.min.js" />
+    <Content Include="tinymce\plugins\bbcode\plugin.min.js" />
+    <Content Include="tinymce\plugins\charmap\plugin.min.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\.gitattributes" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\.gitignore" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\comment\comment.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\comment\continuecomment.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\dialog\dialog.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\dialog\dialog.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\display\fullscreen.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\display\fullscreen.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\display\placeholder.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\display\rulers.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\edit\closebrackets.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\edit\closetag.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\edit\continuelist.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\edit\matchbrackets.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\edit\matchtags.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\edit\trailingspace.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\fold\brace-fold.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\fold\comment-fold.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\fold\foldcode.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\fold\foldgutter.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\fold\foldgutter.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\fold\indent-fold.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\fold\markdown-fold.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\fold\xml-fold.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\hint\anyword-hint.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\hint\css-hint.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\hint\html-hint.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\hint\javascript-hint.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\hint\python-hint.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\hint\show-hint.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\hint\show-hint.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\hint\sql-hint.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\hint\xml-hint.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\lint\coffeescript-lint.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\lint\css-lint.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\lint\javascript-lint.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\lint\json-lint.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\lint\lint.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\lint\lint.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\lint\yaml-lint.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\merge\merge.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\merge\merge.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\mode\loadmode.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\mode\multiplex.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\mode\multiplex_test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\mode\overlay.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\mode\simple.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\runmode\colorize.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\runmode\runmode-standalone.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\runmode\runmode.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\runmode\runmode.node.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\scroll\scrollpastend.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\search\match-highlighter.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\search\search.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\search\searchcursor.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\selection\active-line.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\selection\mark-selection.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\tern\tern.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\tern\tern.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\tern\worker.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\addon\wrap\hardwrap.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\activeline.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\anywordhint.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\bidi.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\btree.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\buffers.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\changemode.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\closebrackets.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\closetag.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\complete.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\emacs.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\folding.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\fullscreen.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\hardwrap.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\html5complete.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\indentwrap.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\lint.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\loadmode.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\marker.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\markselection.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\matchhighlighter.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\matchtags.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\merge.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\multiplex.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\mustache.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\placeholder.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\preview.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\requirejs.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\resize.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\rulers.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\runmode.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\search.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\simplemode.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\spanaffectswrapping_shim.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\sublime.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\tern.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\theme.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\trailingspace.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\variableheight.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\vim.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\visibletabs.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\widget.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\demo\xmlcomplete.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\doc\activebookmark.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\doc\compress.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\doc\docs.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\doc\internals.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\doc\logo.png" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\doc\logo.svg" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\doc\manual.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\doc\realworld.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\doc\releases.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\doc\reporting.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\doc\upgrade_v2.2.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\doc\upgrade_v3.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\doc\upgrade_v4.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\keymap\emacs.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\keymap\sublime.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\keymap\vim.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\lib\codemirror.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\lib\codemirror.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\apl\apl.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\apl\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\asterisk\asterisk.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\asterisk\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\clike\clike.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\clike\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\clike\scala.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\clojure\clojure.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\clojure\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\cobol\cobol.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\cobol\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\coffeescript\coffeescript.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\coffeescript\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\commonlisp\commonlisp.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\commonlisp\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\css\css.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\css\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\css\less.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\css\less_test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\css\scss.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\css\scss_test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\css\test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\cypher\cypher.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\cypher\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\diff\diff.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\diff\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\django\django.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\django\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\dockerfile\dockerfile.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\dockerfile\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\dtd\dtd.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\dtd\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\dylan\dylan.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\dylan\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\d\d.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\d\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\ecl\ecl.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\ecl\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\eiffel\eiffel.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\eiffel\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\erlang\erlang.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\erlang\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\fortran\fortran.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\fortran\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\gas\gas.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\gas\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\gfm\gfm.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\gfm\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\gfm\test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\gherkin\gherkin.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\gherkin\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\go\go.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\go\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\groovy\groovy.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\groovy\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\haml\haml.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\haml\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\haml\test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\haskell\haskell.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\haskell\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\haxe\haxe.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\haxe\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\htmlembedded\htmlembedded.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\htmlembedded\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\htmlmixed\htmlmixed.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\htmlmixed\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\http\http.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\http\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\idl\idl.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\idl\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\jade\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\jade\jade.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\javascript\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\javascript\javascript.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\javascript\json-ld.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\javascript\test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\javascript\typescript.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\jinja2\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\jinja2\jinja2.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\julia\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\julia\julia.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\kotlin\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\kotlin\kotlin.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\livescript\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\livescript\livescript.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\lua\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\lua\lua.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\markdown\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\markdown\markdown.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\markdown\test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\meta.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\mirc\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\mirc\mirc.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\mllike\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\mllike\mllike.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\modelica\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\modelica\modelica.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\nginx\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\nginx\nginx.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\ntriples\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\ntriples\ntriples.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\octave\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\octave\octave.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\pascal\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\pascal\pascal.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\pegjs\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\pegjs\pegjs.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\perl\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\perl\perl.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\php\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\php\php.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\php\test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\pig\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\pig\pig.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\properties\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\properties\properties.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\puppet\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\puppet\puppet.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\python\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\python\python.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\q\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\q\q.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\rpm\changes\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\rpm\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\rpm\rpm.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\rst\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\rst\rst.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\ruby\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\ruby\ruby.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\ruby\test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\rust\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\rust\rust.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\r\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\r\r.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\sass\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\sass\sass.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\scheme\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\scheme\scheme.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\shell\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\shell\shell.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\shell\test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\sieve\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\sieve\sieve.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\slim\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\slim\slim.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\slim\test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\smalltalk\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\smalltalk\smalltalk.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\smartymixed\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\smartymixed\smartymixed.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\smarty\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\smarty\smarty.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\solr\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\solr\solr.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\sparql\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\sparql\sparql.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\sql\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\sql\sql.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\stex\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\stex\stex.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\stex\test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\tcl\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\tcl\tcl.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\textile\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\textile\test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\textile\textile.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\tiddlywiki\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\tiddlywiki\tiddlywiki.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\tiddlywiki\tiddlywiki.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\tiki\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\tiki\tiki.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\tiki\tiki.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\toml\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\toml\toml.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\tornado\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\tornado\tornado.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\turtle\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\turtle\turtle.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\vbscript\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\vbscript\vbscript.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\vb\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\vb\vb.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\velocity\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\velocity\velocity.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\verilog\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\verilog\test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\verilog\verilog.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\xml\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\xml\test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\xml\xml.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\xquery\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\xquery\test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\xquery\xquery.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\yaml\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\yaml\yaml.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\z80\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\mode\z80\z80.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\test\comment_test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\test\doc_test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\test\driver.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\test\emacs_test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\test\index.html" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\test\lint\acorn.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\test\lint\lint.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\test\lint\walk.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\test\mode_test.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\test\mode_test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\test\multi_test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\test\phantom_driver.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\test\run.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\test\search_test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\test\sublime_test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\test\test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\test\vim_test.js" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\3024-day.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\3024-night.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\ambiance-mobile.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\ambiance.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\base16-dark.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\base16-light.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\blackboard.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\cobalt.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\eclipse.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\elegant.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\erlang-dark.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\lesser-dark.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\mbo.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\mdn-like.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\midnight.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\monokai.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\neat.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\neo.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\night.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\paraiso-dark.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\paraiso-light.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\pastel-on-dark.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\rubyblue.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\solarized.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\the-matrix.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\tomorrow-night-eighties.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\twilight.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\vibrant-ink.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\xq-dark.css" />
+    <Content Include="tinymce\plugins\codemirror\codemirror-4.8\theme\xq-light.css" />
+    <Content Include="tinymce\plugins\codemirror\langs\cs_CZ.js" />
+    <Content Include="tinymce\plugins\codemirror\langs\de.js" />
+    <Content Include="tinymce\plugins\codemirror\langs\en.js" />
+    <Content Include="tinymce\plugins\codemirror\langs\fr_FR.js" />
+    <Content Include="tinymce\plugins\codemirror\langs\nl.js" />
+    <Content Include="tinymce\plugins\codemirror\langs\pt_BR.js" />
+    <Content Include="tinymce\plugins\codemirror\langs\pt_PT.js" />
+    <Content Include="tinymce\plugins\codemirror\langs\ru.js" />
+    <Content Include="tinymce\plugins\codemirror\langs\uk.js" />
+    <Content Include="tinymce\plugins\codemirror\langs\zh_TW.js" />
+    <Content Include="tinymce\plugins\codemirror\plugin.js" />
+    <Content Include="tinymce\plugins\codemirror\plugin.min.js" />
+    <Content Include="tinymce\plugins\codemirror\source.html" />
+    <Content Include="tinymce\plugins\code\plugin.min.js" />
+    <Content Include="tinymce\plugins\colorpicker\plugin.min.js" />
+    <Content Include="tinymce\plugins\contextmenu\plugin.min.js" />
+    <Content Include="tinymce\plugins\directionality\plugin.min.js" />
+    <Content Include="tinymce\plugins\emoticons\img\smiley-cool.gif" />
+    <Content Include="tinymce\plugins\emoticons\img\smiley-cry.gif" />
+    <Content Include="tinymce\plugins\emoticons\img\smiley-embarassed.gif" />
+    <Content Include="tinymce\plugins\emoticons\img\smiley-foot-in-mouth.gif" />
+    <Content Include="tinymce\plugins\emoticons\img\smiley-frown.gif" />
+    <Content Include="tinymce\plugins\emoticons\img\smiley-innocent.gif" />
+    <Content Include="tinymce\plugins\emoticons\img\smiley-kiss.gif" />
+    <Content Include="tinymce\plugins\emoticons\img\smiley-laughing.gif" />
+    <Content Include="tinymce\plugins\emoticons\img\smiley-money-mouth.gif" />
+    <Content Include="tinymce\plugins\emoticons\img\smiley-sealed.gif" />
+    <Content Include="tinymce\plugins\emoticons\img\smiley-smile.gif" />
+    <Content Include="tinymce\plugins\emoticons\img\smiley-surprised.gif" />
+    <Content Include="tinymce\plugins\emoticons\img\smiley-tongue-out.gif" />
+    <Content Include="tinymce\plugins\emoticons\img\smiley-undecided.gif" />
+    <Content Include="tinymce\plugins\emoticons\img\smiley-wink.gif" />
+    <Content Include="tinymce\plugins\emoticons\img\smiley-yell.gif" />
+    <Content Include="tinymce\plugins\emoticons\plugin.min.js" />
+    <Content Include="tinymce\plugins\example\dialog.html" />
+    <Content Include="tinymce\plugins\example\plugin.min.js" />
+    <Content Include="tinymce\plugins\example_dependency\plugin.min.js" />
+    <Content Include="tinymce\plugins\fullpage\plugin.min.js" />
+    <Content Include="tinymce\plugins\fullscreen\plugin.min.js" />
+    <Content Include="tinymce\plugins\hr\plugin.min.js" />
+    <Content Include="tinymce\plugins\imagetools\plugin.min.js" />
+    <Content Include="tinymce\plugins\image\plugin.min.js" />
+    <Content Include="tinymce\plugins\importcss\plugin.min.js" />
+    <Content Include="tinymce\plugins\insertdatetime\plugin.min.js" />
+    <Content Include="tinymce\plugins\jbimages\ci\application\config\index.html" />
+    <Content Include="tinymce\plugins\jbimages\ci\application\controllers\index.html" />
+    <Content Include="tinymce\plugins\jbimages\ci\application\errors\index.html" />
+    <Content Include="tinymce\plugins\jbimages\ci\application\helpers\index.html" />
+    <Content Include="tinymce\plugins\jbimages\ci\application\index.html" />
+    <Content Include="tinymce\plugins\jbimages\ci\application\language\english\index.html" />
+    <Content Include="tinymce\plugins\jbimages\ci\application\language\french\index.html" />
+    <Content Include="tinymce\plugins\jbimages\ci\application\language\russian\index.html" />
+    <Content Include="tinymce\plugins\jbimages\ci\application\views\index.html" />
+    <Content Include="tinymce\plugins\jbimages\ci\system\core\index.html" />
+    <Content Include="tinymce\plugins\jbimages\ci\system\helpers\index.html" />
+    <Content Include="tinymce\plugins\jbimages\ci\system\index.html" />
+    <Content Include="tinymce\plugins\jbimages\ci\system\language\english\index.html" />
+    <Content Include="tinymce\plugins\jbimages\ci\system\language\index.html" />
+    <Content Include="tinymce\plugins\jbimages\ci\system\libraries\index.html" />
+    <Content Include="tinymce\plugins\jbimages\css\dialog-v4.css" />
+    <Content Include="tinymce\plugins\jbimages\css\dialog.css" />
+    <Content Include="tinymce\plugins\jbimages\dialog-v4.htm" />
+    <Content Include="tinymce\plugins\jbimages\dialog.htm" />
+    <Content Include="tinymce\plugins\jbimages\editor_plugin.js" />
+    <Content Include="tinymce\plugins\jbimages\editor_plugin_src.js" />
+    <Content Include="tinymce\plugins\jbimages\img\jbimages-bw.gif" />
+    <Content Include="tinymce\plugins\jbimages\img\spinner.gif" />
+    <Content Include="tinymce\plugins\jbimages\js\dialog-v4.js" />
+    <Content Include="tinymce\plugins\jbimages\js\dialog.js" />
+    <Content Include="tinymce\plugins\jbimages\langs\en.js" />
+    <Content Include="tinymce\plugins\jbimages\langs\en_dlg.js" />
+    <Content Include="tinymce\plugins\jbimages\langs\fr.js" />
+    <Content Include="tinymce\plugins\jbimages\langs\fr_dlg.js" />
+    <Content Include="tinymce\plugins\jbimages\langs\ru.js" />
+    <Content Include="tinymce\plugins\jbimages\langs\ru_dlg.js" />
+    <Content Include="tinymce\plugins\jbimages\plugin.js" />
+    <Content Include="tinymce\plugins\jbimages\plugin.min.js" />
+    <Content Include="tinymce\plugins\layer\plugin.min.js" />
+    <Content Include="tinymce\plugins\legacyoutput\plugin.min.js" />
+    <Content Include="tinymce\plugins\link\plugin.min.js" />
+    <Content Include="tinymce\plugins\lists\plugin.min.js" />
+    <Content Include="tinymce\plugins\media\moxieplayer.swf" />
+    <Content Include="tinymce\plugins\media\plugin.min.js" />
+    <Content Include="tinymce\plugins\nonbreaking\plugin.min.js" />
+    <Content Include="tinymce\plugins\noneditable\plugin.min.js" />
+    <Content Include="tinymce\plugins\pagebreak\plugin.min.js" />
+    <Content Include="tinymce\plugins\paste\plugin.min.js" />
+    <Content Include="tinymce\plugins\preview\plugin.min.js" />
+    <Content Include="tinymce\plugins\print\plugin.min.js" />
+    <Content Include="tinymce\plugins\save\plugin.min.js" />
+    <Content Include="tinymce\plugins\searchreplace\plugin.min.js" />
+    <Content Include="tinymce\plugins\spellchecker\plugin.min.js" />
+    <Content Include="tinymce\plugins\tabfocus\plugin.min.js" />
+    <Content Include="tinymce\plugins\table\plugin.min.js" />
+    <Content Include="tinymce\plugins\template\plugin.min.js" />
+    <Content Include="tinymce\plugins\textcolor\plugin.min.js" />
+    <Content Include="tinymce\plugins\textpattern\plugin.min.js" />
+    <Content Include="tinymce\plugins\visualblocks\css\visualblocks.css" />
+    <Content Include="tinymce\plugins\visualblocks\plugin.min.js" />
+    <Content Include="tinymce\plugins\visualchars\plugin.min.js" />
+    <Content Include="tinymce\plugins\wordcount\plugin.min.js" />
+    <Content Include="tinymce\skins\lightgray\content.inline.min.css" />
+    <Content Include="tinymce\skins\lightgray\content.min.css" />
+    <Content Include="tinymce\skins\lightgray\fonts\tinymce-small.dev.svg" />
+    <Content Include="tinymce\skins\lightgray\fonts\tinymce-small.svg" />
+    <Content Include="tinymce\skins\lightgray\fonts\tinymce.dev.svg" />
+    <Content Include="tinymce\skins\lightgray\fonts\tinymce.svg" />
+    <Content Include="tinymce\skins\lightgray\img\anchor.gif" />
+    <Content Include="tinymce\skins\lightgray\img\loader.gif" />
+    <Content Include="tinymce\skins\lightgray\img\object.gif" />
+    <Content Include="tinymce\skins\lightgray\img\trans.gif" />
+    <Content Include="tinymce\skins\lightgray\skin.ie7.min.css" />
+    <Content Include="tinymce\skins\lightgray\skin.min.css" />
+    <Content Include="tinymce\themes\modern\theme.min.js" />
+    <Content Include="tinymce\tinymce.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\backend.Master.cs">
+      <DependentUpon>backend.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\backend.Master.designer.cs">
+      <DependentUpon>backend.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\category.aspx.cs">
+      <DependentUpon>category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\category.aspx.designer.cs">
+      <DependentUpon>category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\categoryhotel.aspx.cs">
+      <DependentUpon>categoryhotel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\categoryhotel.aspx.designer.cs">
+      <DependentUpon>categoryhotel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\eventnew.aspx.cs">
+      <DependentUpon>eventnew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\eventnew.aspx.designer.cs">
+      <DependentUpon>eventnew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\homefe.aspx.cs">
+      <DependentUpon>homefe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\homefe.aspx.designer.cs">
+      <DependentUpon>homefe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\tour.aspx.cs">
+      <DependentUpon>tour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\tour.aspx.designer.cs">
+      <DependentUpon>tour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ViewEventNew.aspx.cs">
+      <DependentUpon>ViewEventNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ViewEventNew.aspx.designer.cs">
+      <DependentUpon>ViewEventNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\viewtour.aspx.cs">
+      <DependentUpon>viewtour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\viewtour.aspx.designer.cs">
+      <DependentUpon>viewtour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="page\detailtour.aspx.cs">
+      <DependentUpon>detailtour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\detailtour.aspx.designer.cs">
+      <DependentUpon>detailtour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\FrontEnd.Master.cs">
+      <DependentUpon>FrontEnd.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\FrontEnd.Master.designer.cs">
+      <DependentUpon>FrontEnd.Master</DependentUpon>
+    </Compile>
+    <Compile Include="page\gioithieu.aspx.cs">
+      <DependentUpon>gioithieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\gioithieu.aspx.designer.cs">
+      <DependentUpon>gioithieu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\hotel.aspx.cs">
+      <DependentUpon>hotel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\hotel.aspx.designer.cs">
+      <DependentUpon>hotel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\lienhe.aspx.cs">
+      <DependentUpon>lienhe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\lienhe.aspx.designer.cs">
+      <DependentUpon>lienhe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\searchtour.aspx.cs">
+      <DependentUpon>searchtour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\searchtour.aspx.designer.cs">
+      <DependentUpon>searchtour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\tour.aspx.cs">
+      <DependentUpon>tour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\tour.aspx.designer.cs">
+      <DependentUpon>tour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\tourplace.aspx.cs">
+      <DependentUpon>tourplace.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\tourplace.aspx.designer.cs">
+      <DependentUpon>tourplace.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="tinymce\plugins\codemirror\codemirror\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\backend.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bootstrap-3.3.7-dist\css\bootstrap-theme.css.map" />
+    <None Include="bootstrap-3.3.7-dist\css\bootstrap-theme.min.css.map" />
+    <None Include="bootstrap-3.3.7-dist\css\bootstrap.css.map" />
+    <None Include="bootstrap-3.3.7-dist\css\bootstrap.min.css.map" />
+    <None Include="bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="page\FrontEnd.Master" />
+    <None Include="tinymce\langs\readme.md" />
+    <None Include="tinymce\plugins\codemirror\codemirror-4.8\.travis.yml" />
+    <None Include="tinymce\plugins\codemirror\codemirror-4.8\AUTHORS" />
+    <None Include="tinymce\plugins\codemirror\codemirror-4.8\bin\authors.sh" />
+    <None Include="tinymce\plugins\codemirror\codemirror-4.8\bin\compress" />
+    <None Include="tinymce\plugins\codemirror\codemirror-4.8\bin\lint" />
+    <None Include="tinymce\plugins\codemirror\codemirror-4.8\bin\release" />
+    <None Include="tinymce\plugins\codemirror\codemirror-4.8\bin\source-highlight" />
+    <None Include="tinymce\plugins\codemirror\codemirror-4.8\bower.json" />
+    <None Include="tinymce\plugins\codemirror\codemirror-4.8\CONTRIBUTING.md" />
+    <None Include="tinymce\plugins\codemirror\codemirror-4.8\LICENSE" />
+    <None Include="tinymce\plugins\codemirror\codemirror-4.8\package.json" />
+    <None Include="tinymce\plugins\codemirror\codemirror-4.8\README.md" />
+    <None Include="tinymce\plugins\jbimages\ci\application\.htaccess" />
+    <None Include="tinymce\plugins\jbimages\ci\application\config\autoload.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\config\config.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\config\constants.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\config\database.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\config\doctypes.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\config\foreign_chars.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\config\hooks.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\config\migration.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\config\mimes.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\config\profiler.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\config\routes.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\config\smileys.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\config\uploader_settings.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\config\user_agents.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\controllers\uploader.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\errors\error_404.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\errors\error_db.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\errors\error_general.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\errors\error_php.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\helpers\jbimages_helper.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\language\english\jbstrings_lang.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\language\french\imglib_lang.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\language\french\jbstrings_lang.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\language\french\upload_lang.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\language\russian\imglib_lang.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\language\russian\jbstrings_lang.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\language\russian\upload_lang.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\views\ajax_upload_result.php" />
+    <None Include="tinymce\plugins\jbimages\ci\application\views\blank.php" />
+    <None Include="tinymce\plugins\jbimages\ci\index.php" />
+    <None Include="tinymce\plugins\jbimages\ci\system\.htaccess" />
+    <None Include="tinymce\plugins\jbimages\ci\system\core\Benchmark.php" />
+    <None Include="tinymce\plugins\jbimages\ci\system\core\CodeIgniter.php" />
+    <None Include="tinymce\plugins\jbimages\ci\system\core\Common.php" />
+    <None Include="tinymce\plugins\jbimages\ci\system\core\Config.php" />
+    <None Include="tinymce\plugins\jbimages\ci\system\core\Controller.php" />
+    <None Include="tinymce\plugins\jbimages\ci\system\core\Exceptions.php" />
+    <None Include="tinymce\plugins\jbimages\ci\system\core\Hooks.php" />
+    <None Include="tinymce\plugins\jbimages\ci\system\core\Input.php" />
+    <None Include="tinymce\plugins\jbimages\ci\system\core\Lang.php" />
+    <None Include="tinymce\plugins\jbimages\ci\system\core\Loader.php" />
+    <None Include="tinymce\plugins\jbimages\ci\system\core\Model.php" />
+    <None Include="tinymce\plugins\jbimages\ci\system\core\Output.php" />
+    <None Include="tinymce\plugins\jbimages\ci\system\core\Router.php" />
+    <None Include="tinymce\plugins\jbimages\ci\system\core\Security.php" />
+    <None Include="tinymce\plugins\jbimages\ci\system\core\URI.php" />
+    <None Include="tinymce\plugins\jbimages\ci\system\core\Utf8.php" />
+    <None Include="tinymce\plugins\jbimages\ci\system\helpers\language_helper.php" />
+    <None Include="tinymce\plugins\jbimages\ci\system\language\english\imglib_lang.php" />
+    <None Include="tinymce\plugins\jbimages\ci\system\language\english\upload_lang.php" />
+    <None Include="tinymce\plugins\jbimages\ci\system\libraries\Image_lib.php" />
+    <None Include="tinymce\plugins\jbimages\ci\system\libraries\Upload.php" />
+    <None Include="tinymce\plugins\jbimages\config.php" />
+    <None Include="tinymce\plugins\jbimages\img\Thumbs.db" />
+    <None Include="tinymce\plugins\jbimages\is_allowed.php" />
+    <None Include="tinymce\plugins\jbimages\readme" />
+    <None Include="tinymce\skins\lightgray\fonts\readme.md" />
+    <None Include="tinymce\skins\lightgray\fonts\tinymce-small.eot" />
+    <None Include="tinymce\skins\lightgray\fonts\tinymce-small.ttf" />
+    <None Include="tinymce\skins\lightgray\fonts\tinymce-small.woff" />
+    <None Include="tinymce\skins\lightgray\fonts\tinymce.eot" />
+    <None Include="tinymce\skins\lightgray\fonts\tinymce.ttf" />
+    <None Include="tinymce\skins\lightgray\fonts\tinymce.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{5BCDBA4B-A161-489F-9038-45CFFE583587}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{1C272A5D-CEF8-4EF9-BF4F-5C007170AE15}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{20E2B466-5147-476C-977E-1597EEB7DDA5}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57361</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

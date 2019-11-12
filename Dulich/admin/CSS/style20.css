@@ -1,0 +1,84 @@
+﻿*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.backend-nav
+{
+    background-color: #e7e7e7;
+    width:200px;
+    margin-top:-20px;
+    float:left;
+}
+#main_body_GridView1
+{
+        width:500px;
+        margin:0 auto;
+    }
+#GridView2
+{
+       width:100%;
+       text-align:center;
+       margin-left:20px;
+    }
+#GridView2 th
+{
+    text-align:center;
+    }        
+.main-content
+{
+    float:right;
+    width:85%;
+    }
+.backend-nav ul
+{
+    list-style-type:none;
+    min-height: 100%;
+    }
+.backend-nav ul li
+{
+    padding:20px 20px;
+    }    
+.backend-nav ul li a
+{
+    display:inline-block;
+    text-decoration:none;
+    text-align: left;
+    padding: 0 1px;
+    color: black;
+    }    
+.backend-nav ul li a:hover{
+    color: red;
+}
+.navbar-left input{
+    margin-left: 80px;
+}
+.backend-nav ul li:hover{
+    color: blue;
+}
+.footer
+{
+    clear:both;
+    width:100%;
+    background-color: #ecf0f5;
+    padding: 15px;
+    margin-top:10px;
+}
+.table-1 td
+{
+     padding:10px 5px;
+    }
+.table-1
+{
+    text-align:center;
+    }
+.content-wrapper{
+    min-height: 100%;
+    z-index: 800;
+}
+.footer a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+

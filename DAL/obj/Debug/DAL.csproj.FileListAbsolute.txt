@@ -1,0 +1,4 @@
+D:\ASP.NET\Dulich\DAL\bin\Debug\DAL.dll
+D:\ASP.NET\Dulich\DAL\bin\Debug\DAL.pdb
+D:\ASP.NET\Dulich\DAL\obj\Debug\DAL.dll
+D:\ASP.NET\Dulich\DAL\obj\Debug\DAL.pdb

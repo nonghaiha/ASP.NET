@@ -1,0 +1,4 @@
+D:\ASP.NET\Dulich\DTO\bin\Debug\DTO.dll
+D:\ASP.NET\Dulich\DTO\bin\Debug\DTO.pdb
+D:\ASP.NET\Dulich\DTO\obj\Debug\DTO.dll
+D:\ASP.NET\Dulich\DTO\obj\Debug\DTO.pdb
